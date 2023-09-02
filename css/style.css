@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: x;
+    src: url(../fonts/Caprasimo-Regular.ttf);
+}
+header{
+    background-image: url(../images/yoga-header.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    height: 60px;
+    padding-top: 10px;
+   
+}
+.logo{
+    position: absolute;
+    width: 20%;
+    left: 10px;
+    top: 5px;
+}
+.logo img{
+    height: 60px;
+    width: 100px;
+   
+}
+#menu_toggle{
+    display: none;
+}
+.menu_nav{
+    position: absolute;
+    right:120px;
+    width: 60%;
+    top: 0;
+}
+.menu_nav ul li{
+    display: inline-block;
+    max-width: 150px;
+    width: 100%;
+    font-size: 26px;
+    line-height: 60px;
+    text-align: center;
+    color: aliceblue;
+    
+}
+#headerdiv{
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    font-family: x;
+    padding: 10px;
+}
+#headerdiv h1,p{
+    color: rgb(220, 220, 220);
+    padding: 10px;
+}
+#headerdiv button{
+    padding: 10px;
+    max-width: 200px;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgb(255, 134, 223);
+    border: none;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    color: white;
+}
+#headerdiv button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.menu_nav ul li:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    
+
+}
+
+/* about start */
+.about h1,p{
+    text-align: center;
+    padding: 20px;
+}
+#abh1{
+    color:rgb(147, 6, 255);
+    font-size: 40px;
+}
+#abp{
+    font-size: 24px;
+    color: black;
+}
+
+/* service start */
+
+#service {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+#service div p{
+    color: black;
+    word-spacing: 5px;
+    font-family: x;
+}
+
+/* yoga center */
+#yoga-center{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 20px;
+    background-color: darkgray;
+}
+/* yoga classes */
+.yoga-class h1,p{
+   text-align: center;
+   margin-top: 20px;
+   color: purple;
+}
+.yoga-cl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.yoga-cl div img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+.yoga-cl div img:hover{
+    box-shadow: 7px 7px 10px 5px black;
+    transform: scale(1.1);
+}
+
+/* time shedule start */
+#time-shedule{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.tm-shdl h1,p{
+    text-align: center;
+   margin-top: 20px;
+   color: purple;
+
+}
+.ap-div1   {
+    border: 1px solid black;
+    padding: 30px;
+}
+.ap-div1 input{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+.ap-div1 button{
+    padding: 20px;
+    background-color: purple;
+    color: aliceblue;
+    border: none;
+    width: 400px;
+}
+.ap-div1 textarea{
+    width:400px;
+    height: 200px;
+    text-align: center;
+}
+.ap-div1 button:hover{
+    background-color:cyan;
+    color: black;
+}
+
+/* trainers section */
+.trainer h1,p{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.exp-trainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.exp-trainer div img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+.exp-trainer div img:hover{
+    box-shadow: 7px 7px 10px 5px black;
+    transform: scale(1.1);
+}
+
+/* footer start */
+#footer{
+    text-align: center;
+}
+#footer button{
+    padding: 20px;
+    width: 300px;
+    background-color: rgba(30, 0, 255, 0.501);
+    color: aliceblue;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    
+}
+#footer button:hover{
+    background-color: orangered;
+    color: black;
+}
+.tel{
+    font-size: 24px;
+    color: black;
+
+}
+.copyright{
+    padding: 30px;
+    text-align: center;
+    font-size: 22px;
+    background-color: orangered;
+    color: black;
+  
+    width: 100%;
+}
+.sticky{
+    position: fixed !important;
+    width: 100%;
+    top:0;
+    z-index: 9;
+    
+}
+
+
+
+
+@media  screen and (max-width:768px){
+    #menu_toggle{
+        display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    }
+    #menu_toggle i.fa-solid.fa-bars {
+        font-size: 25px;
+    color: white;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    z-index: 4;
+}
+.menu{
+    display: none;
+}
+.menu.mob_opened{
+    display: block;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+    #service{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #headerdiv{
+        position: absolute;
+        left: 100px;
+        top: 150px;
+        
+    }
+    #headerdiv p{
+        display: none;
+    }
+    #headerdiv h1{
+        font-size: 24px;
+        text-align: justify;
+
+    }
+    #headerdiv button{
+        position: absolute;
+        left: 20px;
+        top: 200px;
+        padding: 10px;
+        font-size: 20px;
+        max-width: 150px;
+        width: 100%;
+    }
+    #yoga-center{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        align-items: center;
+        justify-content:space-evenly;
+        margin-top: 20px;
+        background-color: darkgray;
+    }
+    .yoga-img{
+        height:auto;
+        max-width: 600px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .yoga-cl{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+        text-align: center;
+    }
+    #time-shedule{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .ap-div1 button{
+        max-width: 400px;
+        width: 100%;
+    }
+    .ap-div1{
+        max-width: 464px;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .ap-div1 textarea{
+        height: auto;
+        max-width: 400px;
+        width: 100%;
+
+    }
+    .exp-trainer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright{
+       display: none;
+    }
+
+    
+    #nav.menu.mob_opened{
+        float: left;
+        margin: 0 auto;
+      background-color: slateblue;
+      list-style: none;
+    }
+    #nav.menu.mob_opened li {
+        padding: 10px 5px;
+    }
+    
+    #nav.menu.mob_opened {
+        width: 100%;
+        text-align: center;
+        height: 60vh;
+        display: flex;
+        margin-left: 120px;
+       
+        flex-direction: column; 
+    }
+     
+   
+    
+}
